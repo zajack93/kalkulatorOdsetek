@@ -5,34 +5,36 @@
 	<title>Kalkulator Odestek</title>
 </head>
 <body>
-<script src="js/calculatorOdsetki.js"></script>
+
 <form action="" method="post">
 
 	<div class="kalkulator">
-		<label for="kapitalPoczatkowy"> Wpłata w PLN: </label> <br />
-		<input type="text" id="kapitalPoczatkowy" name="kapitalPoczatkowy" value=0> zł. <br /> <br />
+		<label for="kapital_poczatkowy"> Wpłata w PLN: </label> <br />
+		<input type="text" id="kapital_poczatkowy" name="kapital_poczatkowy" value="0"> zł. <br /> <br />
 		
-		<label for="czestotliwosc_kapitalizacji"> Wybierz częstotliwość kapitalizacji: </label> <br />
-		<select name="czestotliwosc_kapitalizacji" id="czestotliwosc"> 
-			<option value="roczna"> Roczna </option>
-			<option value="miesieczna"> Miesięczna </option>
-			<option value="kwartalna"> Kwartalna </option>
+		<label for="czestotliwosc"> Wybierz częstotliwość kapitalizacji: </label> <br />
+		<select name="czestotliwosc_kapitalizacji" id="czestotliwosc" > 
+			<option value="1" > Roczna </option>
+			<option value="12"> Miesięczna </option>
+			<option value="4"> Kwartalna </option>
 		</select> <br /> <br />
 		
 		<label for="stopa_zwrotu"> Stopa zwrotu ( w procentach ): </label> <br />
-		<input type="text" id="stopa_zwrotu" name="stopa_zwrotu"> %. <br /> <br />
+		<input type="text" id="stopa_zwrotu" name="stopa_zwrotu" value="0"> %. <br /> <br />
 		
 		<label for="lata"> Liczba lat: </label> <br />
-		<input type="text" id="lata" name="lata"> . <br /> <br />
+		<input type="text" id="lata" name="lata" value="0"> . <br /> <br />
 		
 		<label > Podatek belki 19%:  </label>  
-		<input type="checkbox" name="approve" value="yes"> <br /><br />
-		<input type="submit" value="Oblicz">
-			
-		
+		<input type="checkbox" name="approve" value="0" id="podatek"> <br /><br />
+		<input type="button" id ="licz" value="Oblicz" >
+		<p id="display"> </p>
 	</div>
+	
 
 
 </form>
+
+<script src="js/calculatorOdsetki.js"></script>
 </body>
 </html>
