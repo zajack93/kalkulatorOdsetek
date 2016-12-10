@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kalkulator Odestek</title>
+</head>
+<body>
+<script src="js/calculatorOdsetki.js"></script>
+<form action="" method="post">
+
+	<div class="kalkulator">
+		<label for="kapitalPoczatkowy"> Wpłata w PLN: </label> <br />
+		<input type="text" id="kapitalPoczatkowy" name="kapitalPoczatkowy" value=0> zł. <br /> <br />
+		
+		<label for="czestotliwosc_kapitalizacji"> Wybierz częstotliwość kapitalizacji: </label> <br />
+		<select name="czestotliwosc_kapitalizacji" id="czestotliwosc"> 
+			<option value="roczna"> Roczna </option>
+			<option value="miesieczna"> Miesięczna </option>
+			<option value="kwartalna"> Kwartalna </option>
+		</select> <br /> <br />
+		
+		<label for="stopa_zwrotu"> Stopa zwrotu ( w procentach ): </label> <br />
+		<input type="text" id="stopa_zwrotu" name="stopa_zwrotu"> %. <br /> <br />
+		
+		<label for="lata"> Liczba lat: </label> <br />
+		<input type="text" id="lata" name="lata"> . <br /> <br />
+		
+		<label > Podatek belki 19%:  </label>  
+		<input type="checkbox" name="approve" value="yes"> <br /><br />
+		<input type="submit" value="Oblicz">
+			
+		
+	</div>
+
+
+</form>
+</body>
+</html>
